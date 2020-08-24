@@ -1,6 +1,8 @@
 class CLI 
 
   def start
-    puts "yo is this working?"
+    puts "Hello, welcome to Charities CLI"
+    puts "Please enter Zip Code"
+    input = gets.chomp
   end
 end

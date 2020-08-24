@@ -1,13 +1,13 @@
-CLI charity 
+#CLI charity 
 
-ask for zip code and return list of charities based on zip code
+#ask for zip code and return list of charities based on zip code
 
-ask for selected charity return selected charity info
+#ask for selected charity return selected charity info
 
-Classes:
+#Classes:
 
-CLI class - command line responses in terminal
+#CLI class - command line responses in terminal
 
-API class - Require API end to make/return responses based on input
+#API class - Require API end to make/return responses based on input
 
-Charities - information based on input
+#Charities - information based on input
