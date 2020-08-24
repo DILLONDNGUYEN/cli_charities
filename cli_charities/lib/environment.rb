@@ -8,3 +8,6 @@ end
 require "./lib/cli_charities/cli"
 require "./lib/cli_charities/api"
 require "./lib/cli_charities/charities"
+
+require "pry"
+require "httparty"
