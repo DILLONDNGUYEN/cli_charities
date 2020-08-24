@@ -1,7 +1,10 @@
-class Charities
-  @@ all = []
+class Charity
+  @@all = []
 
-  def initialize
+  attr_accessor :name, :url
+  def initialize(name,url)
+    @name = name
+    @url = url
     @@all << self
   end
 

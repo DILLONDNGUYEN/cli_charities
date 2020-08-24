@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
-
 require './lib/environment'
-
 CLI.new.start
  puts "yoo is this working"
