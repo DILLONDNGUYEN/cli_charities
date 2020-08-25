@@ -8,3 +8,5 @@ require "./lib/cli_charities/cli"
 require "httparty"
 
 require "pry"
+
+require "require_all"
