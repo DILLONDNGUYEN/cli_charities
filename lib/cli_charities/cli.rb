@@ -11,18 +11,16 @@ class CLI
       end
 
       puts "Select Organization by Number"
-     #ability to select organization to view url or description
+     #//ability to select organization to view url or description//
     index = gets.to_i
-    # index = gets.to_i
-      #start.new.select {|selection|}
       if (!Charity.all[index].nil?)
          puts Charity.all[index - 1].url
-  
+      elsif index != gets.to_i
+        puts "invalid response"
+        return start
+     
       end
-    #charity_info.new     
-
-    #select
-    #puts "#{index} - #{c.name}"
+    
   end
   #binding.pry
      
