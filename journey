@@ -6,8 +6,8 @@
 
 #Classes:
 
-#CLI class - command line responses in terminal
+#CLI class - command line responses in terminal- interacts with user/input
 
-#API class - Require API end to make/return responses based on input
+#API class - Require API end to make/return information based on input
 
-#Charities - information based on input
+#Charities - information based on input-objects are created
