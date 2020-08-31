@@ -8,14 +8,10 @@ class API
     response = HTTParty.get(url)
     response ["data"].each do |c|
       
-      #zipcode = c["zipcode"]
       charityName = c["charityName"]
       url = c["url"]
     Charity.new(charityName,url)
-    #info = Charity.new(url)
+   
     end
-   #response.new
-
   end
-  
 end

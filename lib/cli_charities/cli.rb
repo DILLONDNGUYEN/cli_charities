@@ -10,14 +10,12 @@ class CLI
     
       end
 
-      puts "Select Organization by Number"
-     #//ability to select organization to view url or description//
+    puts "Select Organization by Number"       #ability to select organization to view url 
+     
     index = gets.to_i
       if (!Charity.all[index].nil?)
-         puts Charity.all[index - 1].url
-      elsif index != gets.to_i
-        puts "invalid response"
-        return start
+         
+        puts Charity.all[index - 1].url
      
       end
     
