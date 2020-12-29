@@ -12,5 +12,5 @@ gem 'pry-byebug', '~> 3.9'
 
 gem "rake", "~> 12.0"
 
-
+gem 'colorize', '~> 0.8.1'
 
