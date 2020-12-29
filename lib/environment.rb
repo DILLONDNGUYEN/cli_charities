@@ -9,4 +9,6 @@ require "httparty"
 
 require "pry"
 
+require "colorize"
+
 require "require_all"
