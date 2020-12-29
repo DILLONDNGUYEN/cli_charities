@@ -20,7 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Input valid zipcode
+2. Select org of interest
 
 ## Development
 
