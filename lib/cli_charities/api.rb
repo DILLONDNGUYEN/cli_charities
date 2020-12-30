@@ -5,11 +5,13 @@ class API
     response = HTTParty.get(url)
     response ["data"].each do |c|
 
+      city = c["city"]
+      state = c["state"]
       category = c["category"]
       missionStatement = c["missionStatement"]
       charityName = c["charityName"]
       url = c["url"]
-    Charity.new(charityName,url,missionStatement,category)
+    Charity.new(charityName,url,missionStatement,category,state,city)
    
     end
   end
