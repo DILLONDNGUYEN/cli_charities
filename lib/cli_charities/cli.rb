@@ -2,15 +2,15 @@ class CLI
 
   def start
     puts "Hello, Welcome to Charities CLI".colorize(:green)
-    puts zipcode   #greetings and direction
+    puts location   #greetings and direction
   end
-  def zipcode
-    puts "Please enter a Zip Code".colorize(:magenta)
+  def location
+    puts "Please enter a Zip Code or exit".colorize(:magenta)
     input = gets.strip.downcase
     if input == "exit"
-      puts "Goodbye"
+      puts "Goodbye".colorize(:red)
       exit
-    elsif  input.length != 5 #|| input = ("a".."z").include?
+    elsif  input.length != 5 || "abcdefghijklmnopqrstuvwxyz".split('').any?
       puts "Please enter a valid Zip Code".colorize(:red)   #if input != 
          return start
     else API.get_charities(input)
@@ -19,13 +19,12 @@ class CLI
     end
 
       #end
-
+  
     puts "Select Organization by Number".colorize(:magenta)       #ability to select organization to view url 
     index = gets.to_i
       # if input != (!Charity.all[index.nil?])
       #   puts "Please put one of the displayed numbers".colorize(:red)
       #return Charity.all.each.with_index(1) do |c,index|
-        
         
         (!Charity.all[index].nil?)
         puts Charity.all[index - 1].name.colorize(:green)
@@ -37,14 +36,11 @@ class CLI
         
      
       end
-     return zipcode
+     return location
   end
-#   def exit
-#     if input == "exit"
-#     puts "Goodbye"
-#     exit
-#   end
-# end
+  #  def openlink
+  #   system("open '#{url}'")
+  #  end
 end
 
 
