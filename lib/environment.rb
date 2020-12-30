@@ -11,4 +11,6 @@ require "pry"
 
 require "colorize"
 
+require "tty-prompt"
+
 require "require_all"

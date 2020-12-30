@@ -4,9 +4,10 @@ class CLI
     puts "Hello, Welcome to Charities CLI".colorize(:green)   #greetings and direction
     puts "Please enter a Zip Code".colorize(:magenta)
     input = gets.strip.downcase
-      # if input != input.valid?
-      #   return start
-    API.get_charities(input)
+    if input.length != 5 #|| input = ("a".."z").include?
+      puts "Please enter a valid Zip Code".colorize(:red)   #if input != 
+         return start
+    else API.get_charities(input)
     Charity.all.each.with_index(1) do |c,index|
       puts "#{index} - #{c.name}".colorize(:cyan)
     end
@@ -27,8 +28,6 @@ class CLI
     
   end
   #binding.pry
-     
-  
-
-
 end
+end
+
