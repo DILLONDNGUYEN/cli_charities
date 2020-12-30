@@ -24,10 +24,10 @@ class CLI
       # if "#{index}"== "exit"
       #   puts "Goodbye".colorize(:red)
       #   exit
-      if "#{index}" == "0" 
+      if "#{index}" <= "0" 
         puts "Please try again".colorize(:red)
         return location
-      elsif "#{index}" >= "21"  
+      elsif "#{index}" > "20"  
         puts "Please try again".colorize(:red)
         return location      
       else
