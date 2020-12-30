@@ -1,8 +1,8 @@
-require "./lib/cli_charities/api"
+require_relative "./cli_charities/api"
 
-require "./lib/cli_charities/charity"
+require_relative "./cli_charities/charity"
 
-require "./lib/cli_charities/cli"
+require_relative "./cli_charities/cli"
 
 
 require "httparty"
