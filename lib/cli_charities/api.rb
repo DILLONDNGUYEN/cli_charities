@@ -11,7 +11,10 @@ class API
       missionStatement = c["missionStatement"]
       charityName = c["charityName"]
       url = c["url"]
-    Charity.new(charityName,url,missionStatement,category,state,city)
+       Charity.new(charityName,url,missionStatement,category,state,city)
+      
+       #Charity.find_or_create({name: charityName, url: url, missionStatement: missionStatement, category: category, state: state, city: city})
+      
    
     end
   end
